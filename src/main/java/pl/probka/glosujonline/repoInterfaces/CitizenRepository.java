@@ -1,8 +1,8 @@
-package pl.probka.glosujonline.RepoInterfaces;
+package pl.probka.glosujonline.repoInterfaces;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import pl.probka.glosujonline.Entities.Citizen;
+import pl.probka.glosujonline.entities.Citizen;
 
 
 @Repository

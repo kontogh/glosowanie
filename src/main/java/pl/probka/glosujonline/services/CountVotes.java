@@ -1,15 +1,13 @@
-package pl.probka.glosujonline.Services;
+package pl.probka.glosujonline.services;
 
 import org.springframework.stereotype.Service;
-import pl.probka.glosujonline.Entities.ElectionResults;
-import pl.probka.glosujonline.Entities.OKW;
-import pl.probka.glosujonline.RepoInterfaces.ResultsRepo;
-import pl.probka.glosujonline.RepoInterfaces.VotersRepo;
+import pl.probka.glosujonline.entities.ElectionResults;
+import pl.probka.glosujonline.entities.OKW;
+import pl.probka.glosujonline.repoInterfaces.ResultsRepo;
+import pl.probka.glosujonline.repoInterfaces.VotersRepo;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 @Service
 public class CountVotes {

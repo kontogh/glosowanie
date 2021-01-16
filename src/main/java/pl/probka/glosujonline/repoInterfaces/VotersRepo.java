@@ -1,9 +1,9 @@
-package pl.probka.glosujonline.RepoInterfaces;
+package pl.probka.glosujonline.repoInterfaces;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import pl.probka.glosujonline.Entities.Voters;
+import pl.probka.glosujonline.entities.Voters;
 
 @Repository
 public interface VotersRepo extends CrudRepository<Voters, String> {

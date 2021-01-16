@@ -1,9 +1,9 @@
-package pl.probka.glosujonline.Services;
+package pl.probka.glosujonline.services;
 
 import org.springframework.stereotype.Service;
-import pl.probka.glosujonline.Entities.Citizen;
-import pl.probka.glosujonline.Entities.Voters;
-import pl.probka.glosujonline.RepoInterfaces.VotersRepo;
+import pl.probka.glosujonline.entities.Citizen;
+import pl.probka.glosujonline.entities.Voters;
+import pl.probka.glosujonline.repoInterfaces.VotersRepo;
 
 @Service
 public class SaveBallot {

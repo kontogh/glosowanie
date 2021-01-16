@@ -1,11 +1,11 @@
-package pl.probka.glosujonline.Menagers;
+package pl.probka.glosujonline.menagers;
 
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
-import pl.probka.glosujonline.Entities.Citizen;
-import pl.probka.glosujonline.Entities.OKW;
-import pl.probka.glosujonline.RepoInterfaces.OkwRepo;
+import pl.probka.glosujonline.entities.Citizen;
+import pl.probka.glosujonline.entities.OKW;
+import pl.probka.glosujonline.repoInterfaces.OkwRepo;
 
 @Service
 public class OkwMenager {

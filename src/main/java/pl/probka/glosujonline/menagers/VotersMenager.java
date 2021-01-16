@@ -1,8 +1,8 @@
-package pl.probka.glosujonline.Menagers;
+package pl.probka.glosujonline.menagers;
 
 import org.springframework.stereotype.Service;
-import pl.probka.glosujonline.Entities.Voters;
-import pl.probka.glosujonline.RepoInterfaces.VotersRepo;
+import pl.probka.glosujonline.entities.Voters;
+import pl.probka.glosujonline.repoInterfaces.VotersRepo;
 
 import java.util.Optional;
 

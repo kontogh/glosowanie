@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Guicomponents;
+package pl.probka.glosujonline.guicomponents;
 
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
@@ -17,9 +17,9 @@ import com.vaadin.flow.component.radiobutton.RadioGroupVariant;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.spring.annotation.UIScope;
-import pl.probka.glosujonline.Entities.Citizen;
-import pl.probka.glosujonline.Menagers.VotersMenager;
-import pl.probka.glosujonline.Services.SaveBallot;
+import pl.probka.glosujonline.entities.Citizen;
+import pl.probka.glosujonline.menagers.VotersMenager;
+import pl.probka.glosujonline.services.SaveBallot;
 
 @UIScope
 @Route("wybory/kandydaci")

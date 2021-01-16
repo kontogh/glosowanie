@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Guicomponents;
+package pl.probka.glosujonline.guicomponents;
 
 import com.vaadin.flow.component.customfield.CustomField;
 import com.vaadin.flow.component.textfield.TextField;

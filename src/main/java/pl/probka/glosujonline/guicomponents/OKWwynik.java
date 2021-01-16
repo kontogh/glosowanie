@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Guicomponents;
+package pl.probka.glosujonline.guicomponents;
 
 
 import com.vaadin.flow.component.UI;
@@ -16,11 +16,11 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.spring.annotation.UIScope;
 import com.vaadin.flow.spring.annotation.VaadinSessionScope;
-import pl.probka.glosujonline.Entities.ElectionResults;
-import pl.probka.glosujonline.Entities.OKW;
-import pl.probka.glosujonline.RepoInterfaces.ResultsRepo;
-import pl.probka.glosujonline.RepoInterfaces.VotersRepo;
-import pl.probka.glosujonline.Services.CountVotes;
+import pl.probka.glosujonline.entities.ElectionResults;
+import pl.probka.glosujonline.entities.OKW;
+import pl.probka.glosujonline.repoInterfaces.ResultsRepo;
+import pl.probka.glosujonline.repoInterfaces.VotersRepo;
+import pl.probka.glosujonline.services.CountVotes;
 import java.util.List;
 
 @UIScope

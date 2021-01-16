@@ -1,11 +1,11 @@
-package pl.probka.glosujonline.Services;
+package pl.probka.glosujonline.services;
 
 import com.vaadin.flow.server.VaadinSession;
 import org.springframework.stereotype.Service;
-import pl.probka.glosujonline.Entities.Citizen;
-import pl.probka.glosujonline.Entities.OKW;
-import pl.probka.glosujonline.RepoInterfaces.CitizenRepository;
-import pl.probka.glosujonline.RepoInterfaces.OkwRepo;
+import pl.probka.glosujonline.entities.Citizen;
+import pl.probka.glosujonline.entities.OKW;
+import pl.probka.glosujonline.repoInterfaces.CitizenRepository;
+import pl.probka.glosujonline.repoInterfaces.OkwRepo;
 
 import java.util.Optional;
 

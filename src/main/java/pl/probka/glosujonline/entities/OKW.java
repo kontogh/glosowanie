@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Entities;
+package pl.probka.glosujonline.entities;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.RandomStringUtils;

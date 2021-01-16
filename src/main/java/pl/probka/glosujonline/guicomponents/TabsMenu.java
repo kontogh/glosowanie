@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Guicomponents;
+package pl.probka.glosujonline.guicomponents;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.contextmenu.MenuItem;
@@ -7,7 +7,6 @@ import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.menubar.MenuBar;
 import com.vaadin.flow.component.menubar.MenuBarVariant;
-import com.vaadin.flow.component.tabs.TabVariant;
 
 public class TabsMenu extends Div {
     public TabsMenu() {

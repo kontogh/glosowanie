@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Services;
+package pl.probka.glosujonline.services;
 
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;

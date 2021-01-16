@@ -1,4 +1,4 @@
-package pl.probka.glosujonline.Entities;
+package pl.probka.glosujonline.entities;
 
 import javax.persistence.*;
 
