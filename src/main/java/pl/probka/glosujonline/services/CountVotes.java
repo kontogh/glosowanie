@@ -23,7 +23,6 @@ public class CountVotes {
         Optional<Long> isthere;
         isthere = repo.isThere(okwId);
         //if jest potrzebny aby nie tworzyc 2 razy instancji wyniku
-        //wersja 15 bylo isEmpty
         if(isthere.isPresent()==false){
         ElectionResults buf = new ElectionResults(candidate, votersRepo.countForOkw(candidate, okwId));
         OKW temp = new OKW();
@@ -37,6 +36,15 @@ public class CountVotes {
             buf.setOkw(temp);
             repo.save(buf);
             wyniki = null;
+            List<ElectionResults> ercheck = repo.getresforokw(okwId);
+            if(ercheck.get(0).getKandydat()== ercheck.get(1).getKandydat()){
+                if(ercheck.get(0).getglosy()>ercheck.get(1).getglosy()){
+                    repo.delete(ercheck.get(1));
+                }
+                else {
+                    repo.delete(ercheck.get(0));
+                }
+            }
          }
         }
         public List <ElectionResults> getWyniki(long okwid){

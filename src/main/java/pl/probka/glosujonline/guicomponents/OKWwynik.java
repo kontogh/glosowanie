@@ -49,8 +49,15 @@ public class OKWwynik extends VerticalLayout {
         try {
             countVotes.makeElRes(sameOkw.getId(), "ŚPIEWAK Robert Mateusz");
 
-                countVotes.makeElRes(sameOkw.getId(),"DUDKOWSKI Antoni Janusz");
+//                countVotes.makeElRes(sameOkw.getId(),"DUDKOWSKI Antoni Janusz");
             }
+        catch (Exception exep){
+        }
+        try {
+           // countVotes.makeElRes(sameOkw.getId(), "ŚPIEWAK Robert Mateusz");
+
+            countVotes.makeElRes(sameOkw.getId(),"DUDKOWSKI Antoni Janusz");
+        }
         catch (Exception exep){
         }
 

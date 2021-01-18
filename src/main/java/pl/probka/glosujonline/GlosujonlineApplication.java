@@ -11,3 +11,4 @@ public class GlosujonlineApplication {
 		SpringApplication.run(GlosujonlineApplication.class, args);
 	}
 }
+
