@@ -48,14 +48,12 @@ public class OKWwynik extends VerticalLayout {
         hl3.setJustifyContentMode(JustifyContentMode.CENTER);
         try {
             countVotes.makeElRes(sameOkw.getId(), "ŚPIEWAK Robert Mateusz");
-
 //                countVotes.makeElRes(sameOkw.getId(),"DUDKOWSKI Antoni Janusz");
             }
         catch (Exception exep){
         }
         try {
            // countVotes.makeElRes(sameOkw.getId(), "ŚPIEWAK Robert Mateusz");
-
             countVotes.makeElRes(sameOkw.getId(),"DUDKOWSKI Antoni Janusz");
         }
         catch (Exception exep){
