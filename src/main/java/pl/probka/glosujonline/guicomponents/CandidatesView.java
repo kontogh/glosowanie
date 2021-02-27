@@ -49,7 +49,7 @@ public class CandidatesView extends VerticalLayout {
         grid.setColumns("imie", "nazwisko", "pesel", "nrDowodu");
         grid.setHeight("120px");
         citi = VaadinSession.getCurrent().getAttribute(Citizen.class);
-        grid.setItems( );
+        grid.setItems(citi);
         String idid = citi.getNrDowodu();
         RadioButtonGroup<String> radioButon = new RadioButtonGroup<>();
         radioButon.setLabel("Kandydaci na Prezydenta");
