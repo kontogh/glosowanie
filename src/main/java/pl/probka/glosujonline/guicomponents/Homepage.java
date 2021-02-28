@@ -2,7 +2,10 @@ package pl.probka.glosujonline.guicomponents;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.html.*;
+import com.vaadin.flow.component.html.H1;
+import com.vaadin.flow.component.html.H3;
+import com.vaadin.flow.component.html.Image;
+import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
@@ -16,6 +19,9 @@ public class Homepage extends VerticalLayout {
     public Homepage() {
 
         HorizontalLayout hl = new HorizontalLayout();
+        setSpacing(true);
+        setPadding(true);
+        this.getStyle().set("margin", "2rem");
         hl.setWidthFull();
         hl.setHeight("80px");
         hl.add(new H1("WYBORY 2020"));

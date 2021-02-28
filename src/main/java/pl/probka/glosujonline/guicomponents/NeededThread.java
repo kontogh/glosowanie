@@ -2,7 +2,6 @@ package pl.probka.glosujonline.guicomponents;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.progressbar.ProgressBar;
-import com.vaadin.flow.component.progressbar.ProgressBarVariant;
 
 public class NeededThread extends Thread{
     private final UI ui;
@@ -21,13 +20,12 @@ public class NeededThread extends Thread{
     public void run() {
         try {
             // Update the data for a while
-            while (count < 100) {
+            while (count < 99) {
                 // Sleep to emulate background work
                 Thread.sleep(1000);
-
                 ui.access(() -> view.setValue(val+=0.01));
+                count++;
                 }
-
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

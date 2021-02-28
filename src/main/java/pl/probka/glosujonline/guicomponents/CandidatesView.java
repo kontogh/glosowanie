@@ -1,6 +1,7 @@
 package pl.probka.glosujonline.guicomponents;
 
 import com.vaadin.flow.component.AttachEvent;
+import com.vaadin.flow.component.DetachEvent;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
@@ -50,6 +51,7 @@ public class CandidatesView extends VerticalLayout {
         grid.setHeight("120px");
         citi = VaadinSession.getCurrent().getAttribute(Citizen.class);
         grid.setItems(citi);
+
         String idid = citi.getNrDowodu();
         RadioButtonGroup<String> radioButon = new RadioButtonGroup<>();
         radioButon.setLabel("Kandydaci na Prezydenta");
@@ -98,6 +100,12 @@ public class CandidatesView extends VerticalLayout {
     protected void onAttach(AttachEvent attachEvent) {
         thread = new NeededThread(attachEvent.getUI(), pb);
         thread.start();
+    }
+    @Override
+    protected void onDetach(DetachEvent detachEvent) {
+        // Cleanup
+        thread.interrupt();
+        thread = null;
     }
     }
 
